@@ -1,0 +1,123 @@
+#next_level:before{
+    content: "";
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0px;
+    height: 3px;
+
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid green;
+}
+
+#next_level{
+    top:5px;
+    margin-left: 1050px;
+    text-decoration:none;
+    display: block;
+    position: relative;
+    border-radius: 15px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #FF0000;
+
+    padding-top: 0px;
+    padding-bottom: 5px;
+    width: 180px;
+}
+
+#next_level:hover{
+    text-decoration:none;
+    background-color: #FF3333;
+    color:white;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24),0 7px 25px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+#restart{
+    top:5px;
+    position: relative;
+    border-radius: 10px;
+    font-size: 20px;
+    display: block;
+    border: 4px solid #FF0000;
+    width: 100px;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#restart:hover{
+    background-color: #FF3333;
+    color:white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+/*back*/
+#back:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0px;
+    height: 1px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid blue;
+}
+
+#back{
+    margin-left: 20px;
+    margin-top: 0px;
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid #FF0000;
+
+    width: 125px;
+}
+
+#back:hover{
+    background-color: #FF3333;
+    color:white;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24),0 7px 25px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+body{
+    background-image:
+            url("../recursos/sky1.png");
+    background-repeat: repeat;
+    position: relative;
+}
+
+/* JOGO */
+#level1_classico {
+    background-image: url("../recursos/mapa_level1.png");
+    background-size: contain;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+
+html{
+    overflow-y: hidden; /* sem scroll no menu */
+}
+
+footer{
+    /*display: "block";*/
+    font-size: 11px;
+    text-align: center;
+}
+
+
+#logo{
+    margin:auto;
+    width: 30vw;
+}

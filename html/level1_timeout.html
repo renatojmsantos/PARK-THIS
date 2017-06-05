@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> PARK THIS</title>
+    <link rel="shortcun icon" href="../recursos/LOGO.png" type="image/x-icon"\>
+    <link rel="stylesheet" type="text/css" href="../css/level1_timeout.css">
+    <script type="text/javascript" src="../js/nivel1_timeout.js" ></script>
+    <script type="text/javascript" src="../js/Sprite.js" ></script>
+    <script type="text/javascript" src="../js/next_level_timeout.js" ></script>
+
+    <audio autoplay loop>
+        <source src="../recursos/Sam The Kid - 05. Eternamente Hoje.mp3"></source>
+    </audio>
+
+</head>
+
+<body onload="start();" >
+
+    <div align="center">
+        <img id="logo" src="../recursos/LOGO.png">
+
+        <div id="tempo" ></div>
+
+        <canvas id="level1_timeout" onload="valorclock();" width="750" height="400"></canvas>
+
+    </div>
+
+    <a href="level2_timeout.html"><button id="next_level">NEXT LEVEL</button></a>
+
+    <center><a href="level1_timeout.html"><button id="restart">RESTART</button></a></center>
+
+    <a href="PARK_THIS.html"><button id="back"><b>MENU</b></button></a>
+
+</body>
+
+<footer>
+    Park This @ 2017.
+</footer>
+</html>

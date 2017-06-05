@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> PARK THIS </title>
+			<link rel="shortcun icon" href="../recursos/LOGO.png" type="image/x-icon"\>
+			<link rel="stylesheet" type="text/css" href="../css/menu.css">
+			<script type="text/javascript" src="../js/menu.js" ></script>
+			<script type="text/javascript" src="../js/Sprite.js" ></script>
+
+
+		<audio id="music" autoplay loop>
+				<source src="../recursos/CLASSE CRUA - ENGANA (INSTRUMENTAL).mp3"></source>
+		</audio>
+
+	</head>
+
+	<body>
+		<div align="center">
+			<img id="logo" src="../recursos/LOGO.png">
+		</div>
+
+		<div id="car">
+			<marquee behavior="alternative" direction="right">
+				<img width="250px" src="../recursos/Car_menuInicial.png"/>
+			</marquee>
+		</div>
+
+		<div align="center" id="menu">
+				<button onclick = "classic_menu();"><b>CLASSIC</b></button><br>
+				<button onclick = "timeout_menu();"><b>TIMEOUT</b></button><br>
+				<button onclick = "help_menu();"><b>HELP</b></button><br>
+				<button onclick = "show_settings();"><b>SETTINGS</b></button><br>
+				<button onclick = "credits_menu();"><b>CREDITS</b></button><br>
+				<button onclick = "window.close();"><b>QUIT</b></button>
+		</div>
+
+
+		<div align="center" id="classic">
+				<h1>CLASSIC</h1>
+				<p>Sem qualquer limite de tempo.</p>
+				<p>Boa sorte!</p>
+				<a href="level1_classic.html"><button id="play"><b>PLAY</b></button></a>
+		</div>
+
+
+		<div align="center" id="timeout" onload="valorClock();">
+			<h1>TimeOut</h1>
+			<p>O tempo está em contagem decrescente!</p>
+			<p>Sê rápido, boa sorte!</p>
+
+			<select id="difficulty">
+				<optgroup label="LEVEL:" onclick="valorClock();">
+					<option selected disabled hidden>Choose!</option>
+					<option value="Easy">EASY</option>
+					<option value="Medium">MEDIUM</option>
+					<option value="Hard">HARD</option>
+				</optgroup>
+			</select>
+			<a href="level1_timeout.html"><button id="play"><b>PLAY</b></button></a>
+
+		</div>
+
+
+		<center><div id="help">
+			<h1>HELP</h1>
+			<p>Utilize as setas do seu teclado para controlar o automóvel.</p>
+			<p>As setas para a esquerda e para a direita têm a função de virar o volante para a esquerda e para a direita, respectivamente.</p>
+			<p>A seta para cima serve para acelerar.</p>
+			<p>A seta para baixo serve para realizar a manobra de marcha-atrás ou utilizar os travões do automóvel, caso este esteja em movimento.</p>
+			<img width = "11%" src="../recursos/setas.png"/>
+		</div></center>
+
+
+		<center><div id="settings">
+			<h1>SETTINGS</h1>
+			<div id="music">
+				<h> MUSIC VOLUME </h>
+				<div id= "ajust_volume">
+					<input type="range" min="0" max="100" step="1" value="100" onload="SetVolumeMusic(this.value)" oninput="SetVolumeMusic(this.value)" onchange="SetVolumeMusic(this.value)"></input>
+				<p id="musicVolume">100%</p>
+				</div>
+			</div>
+		</div></center>
+
+
+		<center><div id="credits">
+			<h1>CREDITS</h1>
+			<p>Projeto desenvolvido no âmbito da cadeira de Multimédia.</p>
+			<p>Licenciatura em Engenharia Informática,</p>
+			<p>Faculdade de Ciências e Tecnologias da Universidade de Coimbra.</p>
+			<br>
+			<p>Bruno Alves 		  uc2015260196@student.uc.pt</p>
+			<p>Renato Carvalho 		  uc2015235034@student.uc.pt</p>
+			<p>Renato Santos 		  uc2015237457@student.uc.pt</p>
+		</div></center>
+
+	</body>
+
+	<footer>
+		<button id="back" onclick="show_menu();"><b>BACK</b></button>
+		Park This @ 2017.
+	</footer>
+	
+</html>
